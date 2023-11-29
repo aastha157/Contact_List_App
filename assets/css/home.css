@@ -1,0 +1,129 @@
+/* Add background color and center content */
+body {
+  background-color: #cabdbd; /* Light gray background color */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  flex-direction: column;
+  overflow-x: hidden; /* Hide horizontal overflow */
+}
+
+/* Fixed header at the top */
+header#header {
+  background-color: #3498db;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+}
+
+header#header #list-1 {
+  margin: 0;
+}
+
+/* Center the "Contact List" text and icon */
+h1#list-1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+h1#list-1 i {
+  font-size: 48px;
+}
+
+
+/* Make the list centered and give it some padding */
+ul.contact-list {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+  max-width: 600px;
+  margin-top: 100px;
+  margin-bottom: 50px;
+}
+
+/* Style each contact box */
+.contact {
+  background-color: #dbbdbd;
+  width: 200%;
+  border-radius: 5px;
+  /* padding: 30px; */
+  /* margin: 10px 0; */
+  /* display: flex;
+  justify-content: space-between; */
+  align-items: center;
+  box-shadow: 2px 4px 6px rgba(232, 186, 61, 10);
+  
+}
+
+/* Style the delete button */
+.delete-button {
+  cursor: pointer;
+}
+
+/* Add hover effect to the delete button */
+.delete-button:hover {
+  color: #e74c3c;
+}
+
+/* Center the form inputs */
+.new-contact-form {
+  max-width: 400px;
+  width: 100%;
+  background-color: #cabdbd;
+  padding: 10px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: -600px; /* Add margin to the left for spacing */
+  position: fixed; /* Fixed position */
+  top: 150px; /* Adjust top value as needed */
+  z-index: 999; /* Ensure form is on top */
+}
+
+.new-contact-form input {
+  width: calc(100% - 12px);
+  margin-bottom: 10px;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  background-color: #d8d213;
+}
+
+/* Style the submit button */
+.new-contact-form button {
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: none;
+  background-color: #011308;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* Add hover effect to the submit button */
+.new-contact-form button:hover {
+  background-color: #27ae60;
+}
+/* Your existing CSS... */
+
+.notification {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background-color: #2ecc71;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
